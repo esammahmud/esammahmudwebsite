@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esham Mahmud</title>
+
+    <link rel="stylesheet" href="aboutme.css">
+</head>
+<body>
+
+    <div class="content">
+        <h2>A BIT ABOUT ME</h2>
+    </div>
+    <div clas="content">
+    <p>Hello! My name is Esam Mahmud.
+    I am a passionate and dedicated individual with a strong interest in web development. With several years of experience in front-end and back-end development, I have honed my skills in HTML, CSS, JavaScript, java and various frameworks and libraries.
+    Throughout my career, I have had the opportunity to work on a wide range of projects, including e-commerce websites, content management systems, and web applications. I thrive in collaborative environments and enjoy solving complex problems to deliver elegant and user-friendly solutions.
+    When I'm not coding, you can find me exploring the latest trends and advancements in web development, attending tech conferences, and continuously learning new technologies. I am always excited to expand my knowledge and stay up-to-date with the ever-evolving web landscape.
+    Thank you for visiting my website. If you have any inquiries or would like to discuss potential collaboration opportunities, please feel free to get in touch with me.</p>
+    </div>
+    <button id="read-more-button">Read More</button>
+    <button id="read-less-button" style="display: none;">Read Less</button>
+    <div id="esam-text" style="display: none;">
+        <p>I am a person who is positive about every aspect of life.I read in class7.I am very attentive student. I am very punctual and want to do all my work at the right time. I like to eat plain and healthy food. I enjoy dancing, reading books, playing badminton and cooking in my spare time. I never leave my classes and also attend every class.</p>
+    </div>
+    <script>
+        // Get references to the buttons and the esam text
+    var readMoreButton = document.getElementById("read-more-button");
+    var readLessButton = document.getElementById("read-less-button");
+    var esamText = document.getElementById("esam-text");
+    
+    // Add a click event listener to the "Read More" button
+    readMoreButton.addEventListener("click", function() {
+      // Show the esam text and the "Read Less" button
+      esamText.style.display = "block";
+      readLessButton.style.display = "inline-block";
+      readMoreButton.style.display = "none";
+    });
+    
+    // Add a click event listener to the "Read Less" button
+    readLessButton.addEventListener("click", function() {
+      // Hide the esam text and the "Read Less" button
+      esamText.style.display = "none";
+      readLessButton.style.display = "none";
+      readMoreButton.style.display = "inline-block";
+    });
+    </script>
+    <header>
+        <a href="ict.html" class="logo">ESAM</a>
+        <ul>
+            <li><a href="ict.html">Home</a></li>
+            <li><a href="about me.html">About me</a></li>
+            <li><a href="bb.html">Projects</a></li>
+            <li><a href="contuct.html">Contact</a></li>
+
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
